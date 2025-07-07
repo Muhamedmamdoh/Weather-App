@@ -1,0 +1,131 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --main-color: #262835;
+  --second-color: #009ad8;
+}
+body {
+  background-color: #262936;
+}
+.navbar {
+  background-color: var(--main-color);
+}
+
+.head-link {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  padding: 5px 30px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+  border-image: initial;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.navbar-brand img {
+  height: 70px;
+}
+
+.brand-text p {
+  font-size: 15px;
+  color: rgb(171, 171, 171);
+}
+
+.brand-text h6 {
+  font-size: 20px;
+  color: white;
+}
+
+.nav-item:hover a {
+  color: var(--second-color);
+  border: 5px var(--second-color) solid;
+}
+
+/* header */
+
+header {
+  background-image: url(../images/WhatsApp\ Image\ 2025-06-28\ at\ 1.41.19\ AM.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 60vh;
+}
+
+.card {
+  background-color: #323544;
+}
+
+input[type="search"] {
+  background-color: #1e202b;
+  border: none;
+  outline: none;
+}
+.search {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  height: 40px;
+  border-radius: 50px;
+  padding: 0 30px;
+}
+
+#searchInput {
+  color: white;
+}
+input {
+  color: white;
+}
+.card-wrapper {
+  position: relative;
+  top: -150px;
+  z-index: 10;
+}
+.card {
+  background-color: #323544;
+  height: auto;
+  margin: 0;
+  border-radius: 15px;
+}
+.degree {
+  font-size: 5rem;
+}
+
+.subscribe {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  height: 40px;
+  border-radius: 50px;
+  padding: 0 30px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  padding-right: 3px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--second-color);
+}
+.icon:hover {
+  background-color: var(--second-color);
+  color: white;
+}
+.right {
+  width: 35%;
+}
+button {
+  background-color: var(--second-color);
+  color: white;
+  border: none;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg p-5">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo@2x.png" alt="Logo" />
+          <div class="brand-text d-inline-block ps-3">
+            <h6 class="m-0">Weather</h6>
+            <p class="m-0">tag line goes here</p>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="head-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="head-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="head-link" href="#">Live Cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="head-link" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="head-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="py-5 text-center bg-light">
+      <div class="container position-relative w-100">
+        <input
+          id="searchInput"
+          oninput="search()"
+          type="search"
+          class="w-100 p-3 rounded-pill pe-5"
+          placeholder="Find Your Location..."
+          style="padding-right: 120px"
+        />
+        <button class="search">Find</button>
+      </div>
+    </header>
+
+    <section class="my-5 card-wrapper">
+      <div class="container">
+        <div class="row g-0">
+          <div id="today-card" class="col-md-4"></div>
+
+          <div id="second-day" class="col-md-4"></div>
+
+          <div id="third-day" class="col-md-4"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 mb-3 mb-md-0">
+            <div class="left position-relative w-100">
+              <input
+                type="search"
+                class="w-100 p-3 rounded-pill pe-5"
+                placeholder="Enter Your Email To Subscribe..."
+                style="padding-right: 140px"
+              />
+              <button class="position-absolute subscribe">Subscribe</button>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-6 d-flex justify-content-center align-items-center"
+          >
+            <div
+              class="right d-flex justify-content-around align-items-center ms-md-3"
+            >
+              <div class="icon"><i class="fa-brands fa-google-plus-g"></i></div>
+              <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
+              <div class="icon"><i class="fa-brands fa-youtube"></i></div>
+              <div class="icon"><i class="fa-brands fa-wikipedia-w"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="ps-3 pt-3 fs-6 text-secondary text-center text-md-start">
+        Copyright 2014 Company name. Designed by Themezy. All rights reserved
+      </p>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
